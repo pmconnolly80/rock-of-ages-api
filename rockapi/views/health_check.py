@@ -24,9 +24,6 @@ def get_instance_id():
         return resp.text
     except Exception as e:
         return "unknown"
-In your Pipfile add requests = "*" to your packages.
-
-Then in rockproject/urls.py add the health endpoint to urlpatterns. It should look like:
 
 urlpatterns = [
     path('', include(router.urls)),

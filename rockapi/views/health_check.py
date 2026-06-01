@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-import request
+import requests
 
 def health_check(request):
     return JsonResponse({
